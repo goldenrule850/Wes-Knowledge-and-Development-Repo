@@ -281,9 +281,54 @@ The `sorted()` function in Python is used to **sort elements of a list**, or any
 Arguments are **values that you pass to a function when you call it**. They are used by the function to perform operations.
 
 ```ad-info
+Arguments are **values that are passed to functions** (or methods) when they are called. **They provide the function with the data it needs to operate**.
+
+**Types of Arguments:**
+
+- **Positional Arguments**: Arguments that need to be provided in the exact order defined in the function.
+- **Keyword Arguments**: Arguments that are specified by the name of the parameter.
+- **Default Arguments**: Arguments that assume a default value if a value is not provided.
+- **Variable-length Arguments**: Functions that can accept an arbitrary number of arguments using `*args` (for non-keyword arguments) and `**kwargs` (for keyword arguments).
+
 
 ```
 
+#### Examples of different types of arguments
+```python
+# 'age' is a default argument as it has a default value of 25
+def greet(name, age=25):  
+    print(f"Hello, {name}. You are {age} years old.")
+
+# Positional argument
+greet("Alice")
+
+# Keyword argument
+greet(name="Bob", age=30)
+
+# Mixing positional and keyword arguments
+greet("Charlie", age=35)
+
+# Variable-length arguments
+def print_numbers(*args):
+    for number in args:
+        print(number)
+
+print_numbers(1, 2, 3, 4)
+```
+
+##### Output
+```python
+Hello, Alice. You are 25 years old.
+Hello, Bob. You are 30 years old.
+Hello, Charlie. You are 35 years old.
+1
+2
+3
+4
+```
+
+
+#### How functions use arguments
 **Example:**
 ```python
 # Defining a function with two arguments
