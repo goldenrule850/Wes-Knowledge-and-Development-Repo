@@ -27,8 +27,8 @@ print(welcome_message)
 
 **Explanation:**
 
-- **Line 2:** The string `"Welcome to the Python Programming Course!"` is stored in the variable `welcome_message` (more on **variables** below).
-- **Line 3:** `print(welcome_message)`(more on `print` below) displays the message to the user.
+- **Line 2:** The **string** is `"Welcome to the Python Programming Course!"`.  It is stored in the variable `welcome_message` (more on **variables** below).
+- **Line 3:** `print(welcome_message)`(more on `print` below) displays the message to the user via a terminal.
 
 ---
 **Example 2: Receiving User Input**
@@ -44,7 +44,7 @@ print(greeting)
 **Explanation:**
 
 - **Line 2:** `input("Enter your name: ")` prompts the user to enter their name.
-- **Line 5:** The greeting message is constructed using <mark style="background: #FFB86CA6;">string concatenation</mark>.
+- **Line 5:** The greeting message is constructed using **string concatenation**.
 - **Line 6:** `print(greeting)` displays the personalized greeting.
 ##### Output:
 
@@ -67,7 +67,7 @@ for student in students:
 
 **Explanation:**
 
-- **Line 2:** A list of strings, `students`, is defined to store student names.
+- **Line 2:** A list of strings (more on **lists** below), `students`, is defined to store student names.
 	- **Lines 5-6:** A`for` loop (more on `for` **loops** below) iterates through the list and prints each name.  The `for` loop iterates over each element in the `students` list.  `student` is a **loop variable** that takes on the value of each element in the `students` list during each iteration of the loop.  The line `for student in students:` means "for each element in the `students` list, assign the element to the variable `student`, and then execute the indented code block."
 ##### Final Output of the `for` statement:
 ```python
@@ -131,7 +131,7 @@ print(info)
 **Explanation:**
 
 - **Lines 2-3:** Variables `name` and `age` are defined.
-- **Line 6:** An **f-string** (more on f-strings below) is used to create a formatted string `info`.
+- **Line 6:** An f-string (more on **f-strings** below) is used to create a formatted string `info`.
 - **Line 9:** `print(info)` displays the formatted text.
 ##### Output
 ```python
@@ -168,7 +168,7 @@ print("Product:", product_result)
 sum_result = integer_number + float_number
 ```
 
-- This line performs an addition operation.
+- This line performs an **addition operation**.
 - `integer_number + float_number` adds the values of `integer_number` (42) and `float_number` (3.14).
 - The result of the addition (45.14) is stored in the variable `sum_result`.
 
@@ -176,7 +176,7 @@ sum_result = integer_number + float_number
 product_result = integer_number * float_number
 ```
 
-- This line performs a multiplication operation.
+- This line performs a **multiplication operation**.
 - `integer_number * float_number` multiplies the values of `integer_number` (42) and `float_number` (3.14).
 - The result of the multiplication (131.88) is stored in the variable `product_result`.
 
@@ -262,23 +262,27 @@ Sorted scores: [78, 88, 89, 92, 95]
 
 ##### Explanation of `sorted()`
 
-The `sorted()` function in Python is used to **sort elements of a list** (more on lists below) ,or any other iterable **in a specific order**. By default, `sorted()` sorts the elements in **ascending order**. Here's how it works:
+The `sorted()` function in Python is used to **sort elements of a list**, or any other iterable **in a specific order**. By default, `sorted()` sorts the elements in **ascending order**. Here's how it works:
 
 1. **Function Call**:
     
-    - `sorted(scores)` is called with the list `scores` as the argument.
+    - `sorted(scores)` is called with the list `scores` as the **argument**.
 2. **Sorting Process**:
     
     - The `sorted()` function takes the list of numbers and compares each element to determine their order.
     - It uses a comparison-based sorting algorithm to arrange the elements from the smallest to the largest.
 3. **Returning the Result**:
     
-    - The function returns a new list containing the sorted elements, which is stored in the variable `sorted_scores`.
+    - The function **returns a new list containing the sorted elements**, which is stored in the variable `sorted_scores`.
 
 ---
 ### Arguments
 
 Arguments are **values that you pass to a function when you call it**. They are used by the function to perform operations.
+
+```ad-info
+
+```
 
 **Example:**
 ```python
@@ -299,6 +303,11 @@ print("The sum is:", result)
 - **Line 3:** `return a + b` returns the sum of `a` and `b`.
 - **Line 6:** `add_numbers(3, 5)` calls the function with arguments `3` and `5`.
 - **Line 9:** `print("The sum is:", result)` prints the result.
+
+##### Output
+```python
+The sum is: 8
+```
 ---
 ### Variables
 
