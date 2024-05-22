@@ -1,0 +1,9 @@
+### Ephemeral Ports
+
+Ephemeral ports are **temporary ports assigned by a client's operating system during the establishment of a communication session with a server**. In the context of network security within cloud environments, such as AWS, understanding the role and necessity of ephemeral ports in Network Access Control Lists (NACLs) is fundamental for configuring secure and functional network access.
+
+NACLs are **stateless**; they **do not maintain the state of active connections**. This stateless nature means that **while an incoming request to a server might be allowed through an inbound rule, the NACL does not automatically allow the response from the server back to the client**. This is where ephemeral ports come into play.
+
+When a client initiates a connection to a server, the client uses a high-numbered port (an ephemeral port) for the duration of the session. These ports range from 1024 to 65535. Since the response from the server to the client's request uses these ephemeral ports, it's necessary for NACLs to have rules that explicitly allow traffic to flow back through these ports. **Without such rules, responses from the server would be blocked by the NACL, disrupting the communication process and potentially rendering services inaccessible**.
+
+**Allowing outbound traffic on ephemeral ports in the NACL is essential for facilitating the return path of data packets from the server to the client**. By adding a rule to permit outbound traffic on ports 1024 – 65535, administrators ensure that the server's responses can successfully reach the client, completing the request-response cycle that is critical for the operation of web services, applications, and other networked systems.
