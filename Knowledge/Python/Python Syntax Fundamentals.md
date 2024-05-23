@@ -1,11 +1,14 @@
 
 ---
+```ad-important
+Some concepts in this document are going to be referenced out of order, meaning you will see words or concepts you don't understand, that are then later explained in much greater detail as you continue to read and learn.  You will see references to things like **arguments**, **functions**, and **variables** that are then explained later on.
+```
 ### Strings
 
-**Definition:** A string is a sequence of characters enclosed in single (`'`) or double (`"`) quotes.
+- **Definition:** A string is a sequence of characters enclosed in single (`'`) or double (`"`) quotes.
 
 ```ad-info
-Strings are used to represent and manipulate text in programming. They are sequences of characters and are essential for tasks that involve displaying, processing, or storing textual information. Strings are versatile and can be used for a wide range of applications, including:
+Strings are used to **represent and manipulate text in programming**. They are sequences of characters and are essential for tasks that involve displaying, processing, or storing textual information. Strings are versatile and can be used for a wide range of applications, including:
 
 1. **User Interaction**: Displaying messages, prompts, and receiving input from users.
 2. **Data Storage**: Storing text data such as names, addresses, or any other type of textual information.
@@ -14,11 +17,9 @@ Strings are used to represent and manipulate text in programming. They are seque
 5. **Formatting and Parsing**: Creating formatted text for reports, logs, or other outputs and parsing text data for processing.
 ```
 
----
 #### Examples of When Strings Would Be Appropriate to Use
 
----
-**Example 1: Displaying Messages to Users**
+##### Example 1: Displaying Messages to Users
 ```python
 # Displaying a welcome message
 welcome_message = "Welcome to the Python Programming Course!"
@@ -30,8 +31,7 @@ print(welcome_message)
 - **Line 2:** The **string** is `"Welcome to the Python Programming Course!"`.  It is stored in the variable `welcome_message` (more on **variables** below).
 - **Line 3:** `print(welcome_message)`(more on `print` below) displays the message to the user via a terminal.
 
----
-**Example 2: Receiving User Input**
+##### Example 2: Receiving User Input
 ```python
 # Asking the user for their name
 name = input("Enter your name: ")
@@ -46,16 +46,15 @@ print(greeting)
 - **Line 2:** `input("Enter your name: ")` prompts the user to enter their name.
 - **Line 5:** The greeting message is constructed using **string concatenation**.
 - **Line 6:** `print(greeting)` displays the personalized greeting.
-##### Output:
-
+  
+**Output:**
 If the user enters "Wes" when prompted, the output will be:
 ```python
 Enter your name: Wes
 Hello, Wes!
 ```
 
----
-**Example 3: Storing and Processing Text Data**
+##### Example 3: Storing and Processing Text Data
 ```python
 # Storing a list of student names
 students = ["Alice", "Bob", "Charlie", "Diana"]
@@ -68,8 +67,9 @@ for student in students:
 **Explanation:**
 
 - **Line 2:** A list of strings (more on **lists** below), `students`, is defined to store student names.
-	- **Lines 5-6:** A`for` loop (more on `for` **loops** below) iterates through the list and prints each name.  The `for` loop iterates over each element in the `students` list.  `student` is a **loop variable** that takes on the value of each element in the `students` list during each iteration of the loop.  The line `for student in students:` means "for each element in the `students` list, assign the element to the variable `student`, and then execute the indented code block."
-##### Final Output of the `for` statement:
+- **Lines 5-6:** A`for` loop (more on `for` **loops** below) iterates through the list and prints each name.  The `for` loop iterates over each element in the `students` list.  `student` is a **loop variable** that takes on the value of each element (each name in this scenario) in the `students` list during each iteration of the loop.  The line `for student in students:` means "for each element (name) in the `students` list, assign the element to the variable `student`, and then execute the indented code block."
+  
+**Final Output**:
 ```python
 Student: Alice
 Student: Bob
@@ -77,8 +77,7 @@ Student: Charlie
 Student: Diana
 ```
 
----
-**Example 4: Reading from a Text File**
+##### Example 4: Reading from a Text File
 ```python
 # Reading lines from a text file
 with open("example.txt", "r") as file:
@@ -94,8 +93,8 @@ print(content)
 - **Line 3:** The `read()` method (more on **methods** below) reads the entire content of the file into the string `content`.
 - **Line 6:** `print(content)` displays the content of the file.
 
----
-**Example 5: Sending Text Data Over a Network**
+
+##### Example 5: Sending Text Data Over a Network
 ```python
 # Simulating sending a message over a network
 def send_message(message):
@@ -108,14 +107,94 @@ message = "Hello, this is a network message!"
 send_message(message)
 ```
 
-**Explanation:**
+- **Explanation:**
+	- **Line 2:** A function `send_message()` is defined to simulate sending a message.
+	- **Line 6:** The **string** based variable `message` is defined with the content to be sent.  Notice that `message` is defined after the function call `send_message` referencing it is defined.
+	- **Line 9:** `send_message(message)` calls the function to send the message.
 
-- **Line 2:** A function `send_message()` is defined to simulate sending a message.
-- **Line 6:** The **string** `message` is defined with the content to be sent.
-- **Line 9:** `send_message(message)` calls the function to send the message.
+- ##### Understanding Scope and Order of Execution in Python
+	- In Python, the scope and order of execution play crucial roles in how variables and functions are referenced and used. Let's break down the concepts involved in the above example:
 
----
-**Example 6: Formatting Text**
+**Function Definition**:
+```python
+def send_message(message):
+    print("Sending message:", message)
+```
+
+- Here, `send_message` is a function that takes one argument, `message`.
+	- This function is defined first, but it **does not execute until it is called**.  
+		- When you write a function in Python, you're essentially giving the computer a set of instructions that it can follow later, but not right away. Think of it like writing a recipe. The recipe (function) is written down first, but the actual cooking (executing the function) doesn't happen until you decide to use the recipe.
+	- The `message` parameter is **local to the function scope**.
+
+```ad-important
+Understanding Local and Global Scope in Python
+
+In Python, the scope of a variable determines the region of the code where that variable is accessible. There are two main types of scope:
+
+1. **Global Scope**:
+    
+    - Variables defined at the **top level of a script or module**, outside of any function or class, are in the global scope.
+    - These variables are **accessible from anywhere in the code after they are defined**.
+2. **Local Scope**:
+    
+    - Variables defined **inside a function or class are in the local scope**.
+    - These variables are **only accessible within the function or class where they are defined**.
+```
+
+
+**Variable Definition**:
+```python
+message = "Hello, this is a network message!"
+```
+
+- This line defines a variable `message` with a string value.
+- This `message` variable is in the **global scope**, meaning it is accessible anywhere in the code following its definition.
+- When you pass a variable as an argument to a function, the **value of that variable is used within the function**, not the variable itself.
+
+- ##### Another example:
+```python
+ # Defining a function with two arguments,"a" and "b"
+def add_numbers(a, b):
+    return a + b
+
+# Defining two variables which are numbers which are in the global scope.  The "a + b" of the function determines that the arguments will need to be numbers.
+num1 = 10
+num2 = 20
+
+# Calling the function with the variables as arguments, which are local to the add_numbers function
+result = add_numbers(num1, num2)
+
+# Printing the result
+print("The sum is:", result)
+```
+
+1.  **Function Definition**:
+    
+    - `def add_numbers(a, b):` defines a function `add_numbers` with arguments (local) `a` and `b`.
+2. **Variable Definition**:
+    
+    - `num1 = 10` defines a global variable `num1` with the value `10`.
+    - `num2 = 20` defines a global variable `num2` with the value `20`.
+3. **Function Call with Arguments**:
+    
+    - `add_numbers(num1, num2)` calls the function `add_numbers` with `num1` and `num2` as arguments.
+    - Inside the function, `a` is assigned the value of `num1` (10) and `b` is assigned the value of `num2` (20).
+4. **Result**:
+    
+    - The function computes the sum `a + b` (10 + 20) and returns `30`.
+    - `result` is assigned the returned value `30`.
+- `print("The sum is:", result)` outputs `The sum is: 30`.
+
+**Function Call**:
+```python
+send_message(message)
+```
+
+- `send_message(message)` calls the `send_message` function, passing the global `message` variable as an argument.
+- Inside the function, the local parameter `message` is assigned the value of the global `message` variable, which is `"Hello, this is a network message!"`.
+- The function executes `print("Sending message:", message)`, printing the message to the console.
+
+##### Example 6: Formatting Text
 ```python
 # Using f-strings to format text
 name = "Alice"
@@ -133,7 +212,8 @@ print(info)
 - **Lines 2-3:** Variables `name` and `age` are defined.
 - **Line 6:** An f-string (more on **f-strings** below) is used to create a formatted string `info`.
 - **Line 9:** `print(info)` displays the formatted text.
-##### Output
+
+**Output**
 ```python
 Name: Alice, Age: 25
 ```
@@ -293,7 +373,7 @@ Arguments are **values that are passed to functions** (or methods) when they are
 
 ```
 
-#### Examples of different types of arguments
+#### Examples of different types of arguments:
 ```python
 # 'age' is a default argument as it has a default value of 25
 def greet(name, age=25):  
@@ -303,7 +383,7 @@ def greet(name, age=25):
 greet("Alice")
 
 # Keyword argument
-greet(name="Bob", age=30)
+greet(age=30, name="Bob")
 
 # Mixing positional and keyword arguments
 greet("Charlie", age=35)
@@ -316,7 +396,49 @@ def print_numbers(*args):
 print_numbers(1, 2, 3, 4)
 ```
 
-##### Output
+##### Default Arguments
+
+**Definition:** A default argument is an argument that **assumes a default value if a value is not provided** in the function call. Default arguments are specified in the function definition.
+
+**Explanation:**
+
+- In the function `greet`, `age` is a default argument with a default value of `25`.
+- If `age` is not provided when calling `greet`, it defaults to `25`.
+
+##### Positional Arguments
+
+**Definition:** Positional arguments are arguments that need to be provided **in the exact order defined in the function**.
+
+**Explanation:**
+
+- `greet("Alice")` calls the `greet` function with `"Alice"` as the positional argument for `name`, which is the first argument defined in the function `greet(name, age=25)`.
+- Since `age` is not provided, it uses the default value `25`.
+
+##### Keyword Arguments
+
+**Definition:** Keyword arguments are arguments passed to a function by explicitly specifying the parameter name and value. This **allows the arguments to be provided in any order**.
+
+**Explanation:**
+
+- In the call `greet(age=30, name="Bob")`, even though the order of arguments is reversed, it still works because the parameter names (`name` and `age`) are explicitly specified.
+- The function `greet` receives `name` as `"Bob"` and `age` as `30`.
+
+#### Mixing Positional and Keyword Arguments
+
+You can mix positional and keyword arguments in a function call, but **positional arguments must come before keyword arguments**.
+
+```python
+def greet(name, age=25):
+    print(f"Hello, {name}. You are {age} years old.")
+
+# Mixing positional and keyword arguments
+greet("Charlie", age=35)  # This works
+```
+
+**Explanation:**
+
+- In the call `greet("Charlie", age=35)`, `"Charlie"` is provided as a positional argument for `name`, and `35` is provided as a keyword argument for `age`.
+##### Final Output
 ```python
 Hello, Alice. You are 25 years old.
 Hello, Bob. You are 30 years old.
@@ -327,8 +449,7 @@ Hello, Charlie. You are 35 years old.
 4
 ```
 
-
-#### How functions use arguments
+#### How functions use arguments:
 **Example:**
 ```python
 # Defining a function with two arguments
@@ -348,7 +469,6 @@ print("The sum is:", result)
 - **Line 3:** `return a + b` returns the sum of `a` and `b`.
 - **Line 6:** `add_numbers(3, 5)` calls the function with arguments `3` and `5`.
 - **Line 9:** `print("The sum is:", result)` prints the result.
-
 ##### Output
 ```python
 The sum is: 8
@@ -357,6 +477,10 @@ The sum is: 8
 ### Variables
 
 Variables are used to store data that can be referenced and manipulated in your code. They act as placeholders for values.
+
+```ad-info
+
+```
 
 **Example:**
 ```python

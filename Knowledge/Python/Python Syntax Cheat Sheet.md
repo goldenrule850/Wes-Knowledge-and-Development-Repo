@@ -1,4 +1,4 @@
-### Understanding Print and Input in Python
+### Understanding Print and Input functions in Python
 
 In Python, two of the most basic functions you'll use frequently are `print()` and `input()`. These functions help you interact with the console by displaying messages and capturing user input.
 

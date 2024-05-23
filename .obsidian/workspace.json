@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Fundamentals.md",
+                "file": "Knowledge/Python/Python Syntax Cheat Sheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Fundamentals.md",
+                "file": "Knowledge/Python/Python Syntax Cheat Sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Fundamentals.md",
+                "file": "Knowledge/Python/Python Syntax Cheat Sheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Fundamentals.md"
+                "file": "Knowledge/Python/Python Syntax Cheat Sheet.md"
               }
             }
           }
@@ -161,6 +161,8 @@
   },
   "active": "fe9e4bd6780cee30",
   "lastOpenFiles": [
+    "Knowledge/Python/Python Syntax Fundamentals.md",
+    "Knowledge/Python/Python Syntax Cheat Sheet.md",
     "Python Scripts/terminal_test.py",
     "Python Scripts",
     "Knowledge/AWS/AWS Services/Containers/ECS.md",
@@ -170,8 +172,6 @@
     "Useful SOPs/Importing and Converting OVAs to EC2 Instances.md",
     "CloudShell Scripts/CloudTrail Scripts/CloudTrail 'Create Access Key' Lookup.md",
     "EC2/EC2 Instance Connectivity Loss -v1.0.0.md",
-    "Knowledge/Python/Python Syntax Fundamentals.md",
-    "Knowledge/Python/Python Syntax Cheat Sheet.md",
     "Knowledge/Windows Server 2022/Server 2022 Fundamentals/201.1 - Windows Server 2022 Fundamentals.md",
     "Knowledge/Windows Server 2022/Server 2022 Fundamentals/Images/Pasted image 20240126094544.png",
     "Knowledge/Windows Server 2022/Server 2022 Fundamentals/Images/Pasted image 20240120202406.png",
@@ -203,7 +203,6 @@
     "EC2/ENI Drivers",
     "EC2/untitled folder",
     "Six Figure IT Courses/Computer Fundamentals",
-    "Six Figure IT Courses",
     "Pasted image 20240120202208.png",
     "Pasted image 20231221154618.png",
     "Pasted image 20231221154727.png"
