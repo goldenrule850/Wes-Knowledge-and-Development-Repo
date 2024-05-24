@@ -1,7 +1,7 @@
 
 ---
 ```ad-important
-Some concepts in this document are going to be referenced out of order, meaning you will see words or concepts you don't understand, that are then later explained in much greater detail as you continue to read and learn.  You will see references to things like **arguments**, **functions**, and **variables** that are then explained later on.
+Some concepts in this document are going to be referenced out of order, meaning you will see words or concepts you won't initially understand, that are then later explained in much greater detail as you continue to read and learn.  You will see references to things like **arguments**, **functions**, and **variables** that are then explained later on.
 ```
 ### Strings
 
@@ -335,7 +335,7 @@ print("Sorted scores:", sorted_scores)
 - Sorting numeric data directly is straightforward and efficient.
 - If scores were stored as strings, the sorting would be lexicographical (e.g., `"100"` comes before `"20"`), leading to incorrect results for numerical comparisons.
   
-##### Output
+###### Output
 ```python
 Sorted scores: [78, 88, 89, 92, 95]
 ```
@@ -423,6 +423,35 @@ print_numbers(1, 2, 3, 4)
 - In the call `greet(age=30, name="Bob")`, even though the order of arguments is reversed, it still works because the parameter names (`name` and `age`) are explicitly specified.
 - The function `greet` receives `name` as `"Bob"` and `age` as `30`.
 
+#### Parameters and Arguments: What is the difference?
+
+Arguments and parameters are closely related but they are not exactly the same thing.
+
+##### Parameters
+
+**Definition:**
+
+- Parameters are variables **listed inside the parentheses in the function definition**.
+- They act as **placeholders for the values that will be passed to the function** when it is called.
+
+##### Example of Parameters:
+```python
+def greet(name, age):  # 'name' and 'age' are parameters
+    print(f"Hello, {name}. You are {age} years old.")
+```
+
+##### Arguments
+
+**Definition:**
+
+- Arguments are the **actual values passed to the function when it is called**.
+- They are the data you supply to the function's parameters.
+- When calling the function, you **provide arguments that correspond to the parameters**.
+- Arguments are the actual data values that are passed to the function.
+##### Example of Arguments:
+```python
+greet("Alice", 30)  # "Alice" and 30 are arguments
+```
 #### Mixing Positional and Keyword Arguments
 
 You can mix positional and keyword arguments in a function call, but **positional arguments must come before keyword arguments**.
@@ -452,7 +481,7 @@ Hello, Charlie. You are 35 years old.
 #### How functions use arguments:
 **Example:**
 ```python
-# Defining a function with two arguments
+# Defining a function with two parameters
 def add_numbers(a, b):
     return a + b
 
@@ -476,10 +505,49 @@ The sum is: 8
 ---
 ### Variables
 
-Variables are used to store data that can be referenced and manipulated in your code. They act as placeholders for values.
+Variables are used to **store data that can be referenced and manipulated in your code**. They act as placeholders for values.
 
 ```ad-info
+#### What Are Variables?
 
+Variables are names that you use to store data values in your program. They act as placeholders for data and can hold different types of information. In Python, **you don't need to declare a variable before using it**, and the type of data a variable can hold can change dynamically.
+
+##### Data Types for Variables
+
+Python supports several built-in data types. Here are some common ones:
+
+1. **Integers (`int`)**:
+    
+    - Whole numbers, positive or negative, without a decimal point.
+    - Example: `x = 10`
+2. **Floating-point numbers (`float`)**:
+    
+    - Numbers with a decimal point.
+    - Example: `y = 3.14`
+3. **Strings (`str`)**:
+    
+    - Sequences of characters enclosed in single or double quotes.
+    - Example: `name = "Alice"`
+4. **Booleans (`bool`)**:
+    
+    - Logical values representing `True` or `False`.
+    - Example: `is_valid = True`
+5. **Lists (`list`)**:
+    
+    - Ordered collections of items (of any type) enclosed in square brackets.
+    - Example: `fruits = ["apple", "banana", "cherry"]`
+6. **Tuples (`tuple`)**:
+    
+    - Ordered, immutable collections of items enclosed in parentheses.
+    - Example: `coordinates = (10.0, 20.0)`
+7. **Dictionaries (`dict`)**:
+    
+    - Collections of key-value pairs enclosed in curly braces.
+    - Example: `person = {"name": "Alice", "age": 25}`
+8. **Sets (`set`)**:
+    
+    - Unordered collections of unique items enclosed in curly braces.
+    - Example: `unique_numbers = {2, 1, 5, 4, 3}`
 ```
 
 **Example:**
@@ -500,6 +568,140 @@ print("Age:", age)
 - **Line 2:** `age = 25` assigns the value `25` to the variable `age`.
 - **Line 5:** `name = "Alice"` assigns the string `"Alice"` to the variable `name`.
 - **Lines 8-9:** `print()` outputs the values of `name` and `age`.
+
+#### Changing Variables
+
+Variables in Python are dynamic, **meaning their values can be changed, and they can be reassigned to different data types**.
+
+```python
+# Initial variable assignment
+x = 10
+print(x)  # Output: 10
+
+# Changing the variable value
+x = 20
+print(x)  # Output: 20
+
+# Changing the variable to a different data type
+x = "Hello"
+print(x)  # Output: Hello
+```
+
+#### Variables and Parameters
+
+Variables can also be used as arguments in functions, which allows functions to accept input and return output based on that input.
+
+#### Variable Scope
+
+Variables can have different scopes depending on where they are defined:
+
+1. **Global Variables**:
+    
+    - Defined outside any function or block.
+    - Accessible from any part of the program.
+2. **Local Variables**:
+    
+    - Defined inside a function or block.
+    - Accessible only within that function or block.
+
+**Example:**
+```python
+# Global variable
+x = 10
+
+def my_function():
+    # Local variable
+    y = 5
+    print("Inside function, x:", x)  # Can access global variable
+    print("Inside function, y:", y)  # Can access local variable
+
+my_function()
+
+# Outside the function
+print("Outside function, x:", x)  # Can access global variable
+# print("Outside function, y:", y)  # Error: y is not defined outside the function
+```
+
+**Global Variable:**
+```python
+x = 10
+```
+
+- **Definition**: The variable `x` is defined outside of any function, making it a global variable.
+- **Scope**: This means `x` can be accessed from anywhere in the code, both inside and outside of functions.
+
+**Function Definition:**
+```python
+def my_function():
+```
+
+- **Definition**: This line defines a function named `my_function`.
+- **Scope**: The variables defined inside this function will be local to this function.
+
+**Local Variable:**
+```python
+y = 5
+```
+
+- **Definition**: Inside `my_function`, the variable `y` is defined with the value `5`.
+- **Scope**: `y` is a local variable, meaning it can only be accessed within `my_function`.
+
+**Accessing Global Variable Inside Function:**
+```python
+print("Inside function, x:", x)
+```
+
+- **Explanation**: Even though `x` is a global variable, it can be accessed inside `my_function` because global variables are available throughout the code.
+
+**Accessing Local Variable Inside Function:**
+```python
+print("Inside function, y:", y)
+```
+
+- **Explanation**: This line prints the value of the local variable `y`. Since `y` is defined inside `my_function`, it can be accessed here.
+
+**Calling the Function:**
+```python
+my_function()
+```
+
+-  **Explanation**: This line calls `my_function`, which executes the code inside the function.
+- **Output**:
+```python
+Inside function, x: 10
+Inside function, y: 5
+```
+
+**Accessing Global Variable Outside Function:**
+```python
+print("Outside function, x:", x)
+```
+
+- **Explanation**: This line prints the value of `x` outside the function. Since `x` is a global variable, it is accessible here.
+- **Output**:
+```python
+Outside function, x: 10
+```
+
+**Attempting to Access Local Variable Outside Function:**
+```python
+print("Outside function, y:", y)
+```
+
+- **Explanation**: This line is commented out because it would cause an error. The variable `y` is local to `my_function`, so it cannot be accessed outside of that function.
+- **Error**: If uncommented, it would raise a `NameError`
+```python
+NameError: name 'y' is not defined
+```
+
+##### Final Output:
+```python
+Inside function, x: 10
+Inside function, y: 5
+Outside function, x: 10
+```
+
+
 ---
 ### Functions
 

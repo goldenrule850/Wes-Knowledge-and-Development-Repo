@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Cheat Sheet.md",
+                "file": "Knowledge/Python/Python Syntax Fundamentals.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Cheat Sheet.md",
+                "file": "Knowledge/Python/Python Syntax Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Cheat Sheet.md",
+                "file": "Knowledge/Python/Python Syntax Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Cheat Sheet.md"
+                "file": "Knowledge/Python/Python Syntax Fundamentals.md"
               }
             }
           }
@@ -161,8 +161,11 @@
   },
   "active": "fe9e4bd6780cee30",
   "lastOpenFiles": [
-    "Knowledge/Python/Python Syntax Fundamentals.md",
+    "Linux Scripts/DR Testing Script.md",
+    "Knowledge/AWS/AWS Services/Database/Athena/Athena.md",
+    "Terraform Code/Windows Server Data Blocks.md",
     "Knowledge/Python/Python Syntax Cheat Sheet.md",
+    "Knowledge/Python/Python Syntax Fundamentals.md",
     "Python Scripts/terminal_test.py",
     "Python Scripts",
     "Knowledge/AWS/AWS Services/Containers/ECS.md",
@@ -196,8 +199,6 @@
     "Knowledge/AWS/Sysops Administration/Backups/EC2 Backups Ensuring File System Integrity.md",
     "Knowledge/AWS/Solutions Architecture/Database/RDS.md",
     "Knowledge/AWS/Solutions Architecture/Compute/Load Balancers/Application Load Balancers.md",
-    "Terraform Code/Windows Server Data Blocks.md",
-    "PowerShell Scripts/Check Windows Server for Database.md",
     "Knowledge/AWS/Test Prep/Exam Prep/Sysops Administration",
     "EC2/ENI Drivers/AwsEnaNetworkDriver.zip",
     "EC2/ENI Drivers",
