@@ -1,4 +1,5 @@
-# example.py
+import math
+print(math.sqrt(16))  # Output: 4.0
 
 # Defining a function with two arguments
 def add_numbers(a, b):
@@ -8,4 +9,8 @@ def add_numbers(a, b):
 result = add_numbers(3, 5)
 
 # Printing the result
-print("The sum is:", result)
+print("The sum is:", math.sqrt(16) + result)
+
+from datetime import datetime
+now = datetime.now()
+print(now)
