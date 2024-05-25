@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "fe9e4bd6780cee30",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Terraform Code/Windows Server Data Blocks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Terraform Code/Windows Server Data Blocks.md",
+                "file": "PowerShell Scripts/Change Windows Server Hostname.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Terraform Code/Windows Server Data Blocks.md",
+                "file": "PowerShell Scripts/Change Windows Server Hostname.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Terraform Code/Windows Server Data Blocks.md"
+                "file": "PowerShell Scripts/Change Windows Server Hostname.md"
               }
             }
           }
@@ -159,17 +146,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe9e4bd6780cee30",
+  "active": "0975d22bff5ae08a",
   "lastOpenFiles": [
-    "Terraform Code/Terraform Imports.md",
+    "Terraform Code/Modules/EC2/Instance/main.tf",
+    "Terraform Code/Modules/EC2/Instance/main.tf.md",
+    "Terraform Code/Modules/EC2/Instance/Untitled.md",
+    "Visual Studio/Key Commands.md",
+    "Terraform Code/Modules/EC2/Instance",
+    "Terraform Code/Modules/EC2",
+    "Terraform Code/Modules",
     "Terraform Code/DR AMI Data Block.md",
+    "Terraform Code/Terraform Imports.md",
+    "Terraform Code/Windows Server Data Blocks.md",
     "Six Figure IT Courses/Computer Fundamentals/Curriculum.md",
     "PowerShell Scripts/DR Testing (RDP).md",
     "PowerShell Scripts/Change Windows Server Hostname.md",
     "Knowledge/Python/Python Syntax Fundamentals.md",
     "Linux Scripts/DR Testing Script.md",
     "Knowledge/AWS/AWS Services/Database/Athena/Athena.md",
-    "Terraform Code/Windows Server Data Blocks.md",
     "Knowledge/Python/Python Syntax Cheat Sheet.md",
     "Python Scripts/terminal_test.py",
     "Python Scripts",
@@ -193,17 +187,10 @@
     "Knowledge/AWS/AWS Services/AWS Console/AWS Console.md",
     "Knowledge/AWS/Test Prep/Exam Prep/Sysops Administration/Test Review 1.md",
     "Knowledge/AWS/Test Prep/Exam Prep/AWS Certified Solutions Architect - Professional SAP-C02 Exam – Free Exam Q&As, Page 1 _ ExamTopics.pdf",
-    "Useful SOPs/Resolving SSM Agent Issues in AWS.md",
-    "Useful SOPs/Installing Secondary IP To Primary ENI on EC2 Instance.md",
-    "Knowledge/Windows Server 2022/Active Directory/Active Directory Domain Services/Active Directory Domain Services.md",
     "Pasted image 20240228120603.png",
     "Pasted image 20240307142124.png",
-    "Knowledge/AWS/Sysops Administration/CloudFormation/Automatic Rollback in AWS CloudFormation.md",
     "Knowledge/AWS/Test Prep/Exam Prep/Sysops Administration",
     "EC2/ENI Drivers/AwsEnaNetworkDriver.zip",
-    "EC2/ENI Drivers",
-    "EC2/untitled folder",
-    "Six Figure IT Courses/Computer Fundamentals",
     "Pasted image 20240120202208.png",
     "Pasted image 20231221154618.png",
     "Pasted image 20231221154727.png"
