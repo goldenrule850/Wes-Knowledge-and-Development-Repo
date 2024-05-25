@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PowerShell Scripts/Change Windows Server Hostname.md",
+                "file": "Linux Scripts/SSH Script.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PowerShell Scripts/Change Windows Server Hostname.md",
+                "file": "Linux Scripts/SSH Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PowerShell Scripts/Change Windows Server Hostname.md",
+                "file": "Linux Scripts/SSH Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PowerShell Scripts/Change Windows Server Hostname.md"
+                "file": "Linux Scripts/SSH Script.md"
               }
             }
           }
@@ -146,30 +146,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0975d22bff5ae08a",
+  "active": "34cfaff212816f61",
   "lastOpenFiles": [
+    "Docker/Compose Files/docker-compose.yml",
+    "Docker/Compose Files",
+    "Docker",
+    "Linux Scripts/Docker/Compose Files/docker-compose.yml",
+    "Linux Scripts/Docker/Compose Files",
+    "Linux Scripts/Docker",
+    "Linux Scripts/Docket",
+    "Linux Scripts/DR Testing Script.md",
+    "PowerShell Scripts/Change Windows Server Hostname.md",
     "PowerShell Scripts/ADDS Install.ps1",
     "PowerShell Scripts/ADDS Install",
     "Knowledge/Python/Python Syntax Fundamentals.md",
     "Knowledge/AWS/Test Prep/Exam Prep/Sysops Administration/Test Review 1.md",
-    "PowerShell Scripts/Change Windows Server Hostname.md",
     "Terraform Code/Modules/EC2/Instance/main.tf",
     "Terraform Code/Modules/EC2/Instance/main.tf.md",
     "Terraform Code/Modules/EC2/Instance/Untitled.md",
     "Visual Studio/Key Commands.md",
     "Terraform Code/Modules/EC2/Instance",
-    "Terraform Code/Modules/EC2",
-    "Terraform Code/Modules",
     "Terraform Code/DR AMI Data Block.md",
     "Terraform Code/Terraform Imports.md",
     "Terraform Code/Windows Server Data Blocks.md",
     "Six Figure IT Courses/Computer Fundamentals/Curriculum.md",
     "PowerShell Scripts/DR Testing (RDP).md",
-    "Linux Scripts/DR Testing Script.md",
     "Knowledge/AWS/AWS Services/Database/Athena/Athena.md",
     "Knowledge/Python/Python Syntax Cheat Sheet.md",
-    "Python Scripts/terminal_test.py",
-    "Python Scripts",
     "Knowledge/AWS/AWS Services/Containers/ECS.md",
     "Linux Scripts/SSH Script.md",
     "ThinkStack Best Practices For Infrastructure Management.md",
@@ -180,15 +183,12 @@
     "Knowledge/Windows Server 2022/Server 2022 Fundamentals/201.1 - Windows Server 2022 Fundamentals.md",
     "Knowledge/Windows Server 2022/Server 2022 Fundamentals/Images/Pasted image 20240126094544.png",
     "Knowledge/Windows Server 2022/Server 2022 Fundamentals/Images/Pasted image 20240120202406.png",
-    "Knowledge/Python",
-    "Knowledge",
     "Knowledge/AWS/AWS Services/Caching, Delivery, and Edge/Cloudfront.md",
     "SCR-20240131-eic.png",
     "Pasted image 20240228120534.png",
     "Pasted image 20240228120421.png",
     "Knowledge/AWS/AWS Services/Caching, Delivery, and Edge/AWS Global Accelerator.md",
     "Knowledge/AWS/AWS Services/AWS Console/AWS Console.md",
-    "Knowledge/AWS/Test Prep/Exam Prep/AWS Certified Solutions Architect - Professional SAP-C02 Exam – Free Exam Q&As, Page 1 _ ExamTopics.pdf",
     "Pasted image 20240228120603.png",
     "Pasted image 20240307142124.png",
     "Pasted image 20240120202208.png",

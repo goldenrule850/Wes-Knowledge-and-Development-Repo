@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  winserver2022:
+    image: dockurr/windows:2022
+    environment:
+      - VERSION=2022
+    stdin_open: true
+    tty: true
