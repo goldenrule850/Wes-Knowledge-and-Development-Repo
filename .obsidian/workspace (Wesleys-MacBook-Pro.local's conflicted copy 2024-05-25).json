@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "PowerShell Scripts/Change Windows Server Hostname.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fe9e4bd6780cee30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Knowledge/Python/Python Syntax Fundamentals.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,50 +159,51 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0975d22bff5ae08a",
+  "active": "fe9e4bd6780cee30",
   "lastOpenFiles": [
-    "Knowledge/Python/Python Syntax Cheat Sheet.md",
-    "Linux Scripts/SSH Script.md",
-    "Docker/Compose Files/docker-compose.yml",
-    "Docker/Compose Files",
-    "Docker",
-    "Linux Scripts/Docker/Compose Files/docker-compose.yml",
-    "Linux Scripts/Docker/Compose Files",
-    "Linux Scripts/Docker",
-    "Linux Scripts/Docket",
-    "Linux Scripts/DR Testing Script.md",
-    "PowerShell Scripts/Change Windows Server Hostname.md",
-    "PowerShell Scripts/ADDS Install.ps1",
-    "PowerShell Scripts/ADDS Install",
-    "Knowledge/Python/Python Syntax Fundamentals.md",
-    "Knowledge/AWS/Test Prep/Exam Prep/Sysops Administration/Test Review 1.md",
     "Terraform Code/Modules/EC2/Instance/main.tf",
-    "Terraform Code/Modules/EC2/Instance/main.tf.md",
-    "Terraform Code/Modules/EC2/Instance/Untitled.md",
-    "Visual Studio/Key Commands.md",
-    "Terraform Code/DR AMI Data Block.md",
-    "Terraform Code/Terraform Imports.md",
-    "Terraform Code/Windows Server Data Blocks.md",
-    "Six Figure IT Courses/Computer Fundamentals/Curriculum.md",
-    "PowerShell Scripts/DR Testing (RDP).md",
-    "Knowledge/AWS/AWS Services/Database/Athena/Athena.md",
-    "Knowledge/AWS/AWS Services/Containers/ECS.md",
-    "ThinkStack Best Practices For Infrastructure Management.md",
-    "ThinkStack AWS Backups.md",
-    "Useful SOPs/Importing and Converting OVAs to EC2 Instances.md",
-    "CloudShell Scripts/CloudTrail Scripts/CloudTrail 'Create Access Key' Lookup.md",
-    "EC2/EC2 Instance Connectivity Loss -v1.0.0.md",
+    "Docker/Compose Files/docker-compose.yml",
+    "Terraform Code/Modules/EC2/Instance",
+    "Docker/Compose Files",
+    "Terraform Code/Modules/EC2",
+    "PowerShell Scripts/ADDS Install.ps1",
+    "Docker",
+    "Terraform Code/Modules",
+    "Python Scripts/terminal_test.py",
+    "Python Scripts",
+    "Knowledge/Python/Python Syntax Cheat Sheet.md",
+    "Knowledge/Python/Python Syntax Fundamentals.md",
     "Knowledge/Windows Server 2022/Server 2022 Fundamentals/201.1 - Windows Server 2022 Fundamentals.md",
     "Knowledge/Windows Server 2022/Server 2022 Fundamentals/Images/Pasted image 20240126094544.png",
     "Knowledge/Windows Server 2022/Server 2022 Fundamentals/Images/Pasted image 20240120202406.png",
+    "ThinkStack AWS Backups.md",
+    "Knowledge/Python",
     "Knowledge/AWS/AWS Services/Caching, Delivery, and Edge/Cloudfront.md",
     "SCR-20240131-eic.png",
     "Pasted image 20240228120534.png",
     "Pasted image 20240228120421.png",
     "Knowledge/AWS/AWS Services/Caching, Delivery, and Edge/AWS Global Accelerator.md",
     "Knowledge/AWS/AWS Services/AWS Console/AWS Console.md",
+    "Knowledge/AWS/Test Prep/Exam Prep/Sysops Administration/Test Review 1.md",
+    "ThinkStack Best Practices For Infrastructure Management.md",
+    "Terraform Code/Terraform Imports.md",
+    "Terraform Code/DR AMI Data Block.md",
+    "Useful SOPs/Resolving SSM Agent Issues in AWS.md",
+    "Useful SOPs/Installing Secondary IP To Primary ENI on EC2 Instance.md",
+    "Useful SOPs/Importing and Converting OVAs to EC2 Instances.md",
+    "Knowledge/Windows Server 2022/Active Directory/Active Directory Domain Services/Active Directory Domain Services.md",
     "Pasted image 20240228120603.png",
     "Pasted image 20240307142124.png",
+    "Knowledge/AWS/Sysops Administration/CloudFormation/Automatic Rollback in AWS CloudFormation.md",
+    "Knowledge/AWS/Sysops Administration/Backups/EC2 Backups Ensuring File System Integrity.md",
+    "Knowledge/AWS/Solutions Architecture/Database/RDS.md",
+    "Knowledge/AWS/Solutions Architecture/Compute/Load Balancers/Application Load Balancers.md",
+    "Terraform Code/Windows Server Data Blocks.md",
+    "PowerShell Scripts/Check Windows Server for Database.md",
+    "Linux Scripts/DR Testing Script.md",
+    "CloudShell Scripts/List all Instances, and their EBS volumes.md",
+    "CloudShell Scripts/Check US Regions for Resources.md",
+    "Linux Scripts/SSH Script.md",
     "Pasted image 20240120202208.png",
     "Pasted image 20231221154618.png",
     "Pasted image 20231221154727.png"

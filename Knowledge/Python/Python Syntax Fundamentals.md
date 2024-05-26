@@ -900,7 +900,7 @@ def set_age(self, new_age):  # Method
     - This is the name of the method that can be called on an instance of the class.
 2. **Parameters**:
     
-    - **`self`**: This parameter refers to the instance of the class. It **allows access to the instance's attributes and methods**. It is a convention to name it `self`, and **it must be the first parameter of any method in the class**.
+    - **`self`**: This parameter refers to the instance of the class. It **allows access to the instance's attributes and methods** (name, age, bark, get_age, and set_age). It is a convention to name it `self`, and **it must be the first parameter of any method in the class**.
     - **`new_age`**: This is an **additional parameter that the method accepts**. It represents the new age value that will be assigned to the instance's `age` attribute.
 3. **Method Body**:
     
@@ -908,7 +908,6 @@ def set_age(self, new_age):  # Method
 ##### How Calling `my_dog.set_age(4)` Modifies the `age` Attribute
 
 Let's break this down step-by-step.
-
 ###### Step 1: Creating the Object
 
 First, an instance of the `Dog` class is created.
@@ -937,13 +936,106 @@ Here's what happens during this call:
 3. **Executing the Method Body**:
     
     - Inside the `set_age` method, the line `self.age = new_age` is executed.
-    - `self.age` refers to the `age` attribute of the `my_dog` instance.
+    - `self.age` refers to the `age` attribute of the `my_dog` instance, which was initially set as `3`.
     - `new_age` is `4`.
 4. **Assignment**:
     
     - The value of `new_age` (`4`) is assigned to `self.age`.
     - This updates the `age` attribute of the `my_dog` instance from `3` to `4`.
 
+#### Nested Classes in Python
+
+Classes can be **nested inside other classes in Python**. Nested classes are used when a class is only relevant within the context of another class. This can help in organizing code and encapsulating functionality.
+
+**Example**
+```python
+class OuterClass:
+    class InnerClass:
+        def __init__(self, value):
+            self.value = value
+        
+        def display(self):
+            print(f"Inner class value: {self.value}")
+
+# Creating an instance of the outer class
+outer = OuterClass()
+
+# Creating an instance of the inner class
+inner = outer.InnerClass(10)
+inner.display()  # Output: Inner class value: 10
+```
+
+**Explanation**
+```python
+class OuterClass:
+```
+
+- **Class Definition**: This line defines a class named `OuterClass`.
+- **Purpose**: `OuterClass` serves as a container for other attributes and methods, including the nested `InnerClass`.
+
+```python
+class InnerClass:
+```
+
+- **Nested Class Definition**: This line defines a class named `InnerClass` inside `OuterClass`.
+- **Purpose**: `InnerClass` is defined within the scope of `OuterClass`, meaning it is only relevant within `OuterClass`.
+
+```python
+def __init__(self, value):
+    self.value = value
+```
+
+- **`__init__` Method**: This is a special method in Python known as the constructor. It is called when an instance of the class is created.
+- **Parameters**:
+    - `self`: Refers to the instance of the class.
+    - `value`: An additional parameter that initializes the instance's `value` attribute.
+- **Logic**:
+    - `self.value = value`: This line sets the `value` attribute of the instance to the value passed as an argument during instantiation.
+
+```python
+def display(self):
+    print(f"Inner class value: {self.value}")
+```
+
+- **`display` Method**: This is a regular method defined inside `InnerClass`.
+- **Parameters**:
+    - `self`: Refers to the instance of the class.
+- **Logic**:
+    - `print(f"Inner class value: {self.value}")`: This line prints the `value` attribute of the instance.
+
+##### Creating an Instance of the Outer Class
+
+```python
+outer = OuterClass()
+```
+
+- **Instance Creation**: This line creates an instance of `OuterClass` and assigns it to the variable `outer`.
+- **Logic**:
+    - `outer` is now an instance of `OuterClass`. It doesn't have any specific attributes or methods used in this example.
+
+##### Creating an Instance of the Inner Class
+
+```python
+inner = outer.InnerClass(10)
+```
+
+- **Instance Creation**: This line creates an instance of `InnerClass` and assigns it to the variable `inner`.
+- **Accessing the Inner Class**:
+    - `outer.InnerClass(10)` accesses `InnerClass` through the `outer` instance of `OuterClass`.
+    - `10` is passed as the argument for the `value` parameter in the `__init__` method of `InnerClass`.
+- **Logic**:
+    - The `__init__` method of `InnerClass` is called with `value=10`.
+    - The `value` attribute of the `inner` instance is set to `10`.
+
+##### Calling a Method on the Inner Class Instance
+
+```python
+inner.display()  # Output: Inner class value: 10
+```
+
+- **Method Call**: This line calls the `display` method on the `inner` instance.
+- **Logic**:
+    - The `display` method prints the message: `Inner class value: 10`.
 
 ---
 
