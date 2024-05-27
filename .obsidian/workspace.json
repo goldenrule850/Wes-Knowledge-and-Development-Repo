@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Fundamentals.md",
+                "file": "Knowledge/Python/PCEP Course.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Fundamentals.md",
+                "file": "Knowledge/Python/PCEP Course.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Fundamentals.md",
+                "file": "Knowledge/Python/PCEP Course.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Knowledge/Python/Python Syntax Fundamentals.md"
+                "file": "Knowledge/Python/PCEP Course.md"
               }
             }
           }
@@ -148,7 +148,10 @@
   },
   "active": "0975d22bff5ae08a",
   "lastOpenFiles": [
+    "Knowledge/Python/Python Syntax Fundamentals.md",
+    "Knowledge/Python/PCEP Course.md",
     "Knowledge/Python/Python Syntax Cheat Sheet.md",
+    "Knowledge/Windows Server 2022/Active Directory/Active Directory Domain Services/Active Directory Domain Services.md",
     "Linux Scripts/SSH Script.md",
     "Docker/Compose Files/docker-compose.yml",
     "Docker/Compose Files",
@@ -161,7 +164,6 @@
     "PowerShell Scripts/Change Windows Server Hostname.md",
     "PowerShell Scripts/ADDS Install.ps1",
     "PowerShell Scripts/ADDS Install",
-    "Knowledge/Python/Python Syntax Fundamentals.md",
     "Knowledge/AWS/Test Prep/Exam Prep/Sysops Administration/Test Review 1.md",
     "Terraform Code/Modules/EC2/Instance/main.tf",
     "Terraform Code/Modules/EC2/Instance/main.tf.md",
@@ -187,7 +189,6 @@
     "Pasted image 20240228120534.png",
     "Pasted image 20240228120421.png",
     "Knowledge/AWS/AWS Services/Caching, Delivery, and Edge/AWS Global Accelerator.md",
-    "Knowledge/AWS/AWS Services/AWS Console/AWS Console.md",
     "Pasted image 20240228120603.png",
     "Pasted image 20240307142124.png",
     "Pasted image 20240120202208.png",

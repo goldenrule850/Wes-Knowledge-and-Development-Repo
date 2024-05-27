@@ -217,6 +217,21 @@ print(info)
 Name: Alice, Age: 25
 ```
 
+```ad-tip
+#### Single vs Double Quote Strings in Python
+
+In Python, both single quotes (`' '`) and double quotes (`" "`) are used to define string literals. There is no difference in functionality between the two; however, certain conventions and best practices may make one preferable over the other in specific contexts.
+
+#### Why Single Quotes are Often Preferred
+
+1. **Consistency**:
+    
+    - Using single quotes consistently throughout your code can improve readability and maintainability. It helps in maintaining a uniform coding style across the project.
+2. **Escape Sequences**:
+    
+    - Single quotes are often preferred when the string contains double quotes to avoid the need for escape sequences.
+```
+
 ---
 ### Numbers
 
