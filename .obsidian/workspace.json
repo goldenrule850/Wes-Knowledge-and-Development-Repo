@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Knowledge/Python/PCEP Course.md",
+                "file": "Linux Scripts/DR Testing Script.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knowledge/Python/PCEP Course.md",
+                "file": "Linux Scripts/DR Testing Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Knowledge/Python/PCEP Course.md",
+                "file": "Linux Scripts/DR Testing Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Knowledge/Python/PCEP Course.md"
+                "file": "Linux Scripts/DR Testing Script.md"
               }
             }
           }
@@ -148,8 +148,21 @@
   },
   "active": "0975d22bff5ae08a",
   "lastOpenFiles": [
-    "Knowledge/Python/Python Syntax Fundamentals.md",
+    "Terraform Code/Windows Server Data Blocks.md",
+    "Terraform Code/Terraform Imports.md",
+    "Terraform Code/DR AMI Data Block.md",
+    "PowerShell Scripts/Expand EBS Volume at OS Level.md",
+    "PowerShell Scripts/DR Testing (SSM).md",
+    "PowerShell Scripts/DR Testing (RDP).md",
+    "PowerShell Scripts/Check Windows Server for Database.md",
+    "PowerShell Scripts/Change Windows Server Hostname.md",
     "Knowledge/Python/PCEP Course.md",
+    "Knowledge/AWS/Test Prep/Exam Prep/Sysops Administration/Test Review 1.md",
+    "Knowledge/AWS/Test Prep/Exam Prep/AWS Web Application Firewall (WAF).md",
+    "Knowledge/AWS/Solutions Architecture/Compute/Load Balancers/Application Load Balancers.md",
+    "Knowledge/AWS/Test Prep/Exam Prep/AWS Certified Solutions Architect - Professional SAP-C02 Exam – Free Exam Q&As, Page 1 _ ExamTopics.pdf",
+    "Knowledge/AWS/Test Prep/Exam Prep/AWS Certified Solutions Architect Professional Slides v22.pdf",
+    "Knowledge/Python/Python Syntax Fundamentals.md",
     "Knowledge/Python/Python Syntax Cheat Sheet.md",
     "Knowledge/Windows Server 2022/Active Directory/Active Directory Domain Services/Active Directory Domain Services.md",
     "Linux Scripts/SSH Script.md",
@@ -161,34 +174,21 @@
     "Linux Scripts/Docker",
     "Linux Scripts/Docket",
     "Linux Scripts/DR Testing Script.md",
-    "PowerShell Scripts/Change Windows Server Hostname.md",
     "PowerShell Scripts/ADDS Install.ps1",
-    "PowerShell Scripts/ADDS Install",
-    "Knowledge/AWS/Test Prep/Exam Prep/Sysops Administration/Test Review 1.md",
-    "Terraform Code/Modules/EC2/Instance/main.tf",
     "Terraform Code/Modules/EC2/Instance/main.tf.md",
     "Terraform Code/Modules/EC2/Instance/Untitled.md",
     "Visual Studio/Key Commands.md",
-    "Terraform Code/DR AMI Data Block.md",
-    "Terraform Code/Terraform Imports.md",
-    "Terraform Code/Windows Server Data Blocks.md",
     "Six Figure IT Courses/Computer Fundamentals/Curriculum.md",
-    "PowerShell Scripts/DR Testing (RDP).md",
     "Knowledge/AWS/AWS Services/Database/Athena/Athena.md",
     "Knowledge/AWS/AWS Services/Containers/ECS.md",
     "ThinkStack Best Practices For Infrastructure Management.md",
     "ThinkStack AWS Backups.md",
     "Useful SOPs/Importing and Converting OVAs to EC2 Instances.md",
-    "CloudShell Scripts/CloudTrail Scripts/CloudTrail 'Create Access Key' Lookup.md",
-    "EC2/EC2 Instance Connectivity Loss -v1.0.0.md",
-    "Knowledge/Windows Server 2022/Server 2022 Fundamentals/201.1 - Windows Server 2022 Fundamentals.md",
     "Knowledge/Windows Server 2022/Server 2022 Fundamentals/Images/Pasted image 20240126094544.png",
     "Knowledge/Windows Server 2022/Server 2022 Fundamentals/Images/Pasted image 20240120202406.png",
-    "Knowledge/AWS/AWS Services/Caching, Delivery, and Edge/Cloudfront.md",
     "SCR-20240131-eic.png",
     "Pasted image 20240228120534.png",
     "Pasted image 20240228120421.png",
-    "Knowledge/AWS/AWS Services/Caching, Delivery, and Edge/AWS Global Accelerator.md",
     "Pasted image 20240228120603.png",
     "Pasted image 20240307142124.png",
     "Pasted image 20240120202208.png",
